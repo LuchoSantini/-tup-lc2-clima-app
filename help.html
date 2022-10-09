@@ -27,12 +27,13 @@
     <main>
         <h2>Ayuda Clima App v.1.0</h2>
         <div class="center-text">
-        <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherApp</a></p>
-        <p>Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima.</a></p>
+            <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la API de <a
+                    href="https://openweathermap.org/api" target="_blank">OpenWeatherApp</a></p>
+            <p>Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y luego
+                seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima.</a></p>
         </div>
         <section>
             <form>
-                <div class="center-text">
                 <label for="nombreUsuario">Nombre: </label>
                 <br>
                 <input type="text" id="nombreUsuario" class="ag">
@@ -44,18 +45,21 @@
                 <label for="areaTexto">Mensaje: </label>
                 <br>
                 <textarea id="areaTexto" rows="10" cols="30"></textarea>
-                <br>
+                <div class="center">
+                    <br>
+                    <input type="submit" value="Limpiar" class="button">
+                    <input type="submit" value="Enviar" id="enviarMensaje" class="button">
                 </div>
-                <div class="center-text">
-                <input type="submit" value="Limpiar" class="button">
-                <input type="submit" value="Enviar" id="enviarMensaje" class="button">
-                </div>
-                <div class="error">
-                    <p>Ingrese un email válido</p>
-                </div>
-                </form>
-            
+            </form>
         </section>
+        <br>
+
+        <section>
+            <div class="error">
+                <span>Ingrese un email válido</span>
+            </div>
+        </section>
+
     </main>
     <footer>
         <p>

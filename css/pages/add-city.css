@@ -158,33 +158,19 @@ form {
     text-align: center;
 }
 
-.exito {
-    background-color: #28a745;
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
     border-radius: 30px;
     width: 500px;
     height: 60px;
     margin-top: 30px;
+    padding-top: 10px;
 }
-
-.error {
-    background-color: #dc3545;
-    color: white;
-    border-radius: 30px;
-    width: 500px;
-    height: 60px;
-    margin-top: 30px;
-}
-
-.almacenada {
-    background-color: #ffc107;
-    color: white;
-    border-radius: 30px;
-    width: 500px;
-    height: 60px;
-    margin-top: 30px;
-}
-
 
 
 

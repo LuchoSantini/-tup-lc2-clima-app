@@ -163,14 +163,18 @@ select {
 }
 
 .error {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
+    background-color: red;
     border-radius: 30px;
     width: 500px;
     height: 60px;
     margin-top: 30px;
-    text-align: center;
 }
+
 
 .button {
     background-color: var(--color-theme);
@@ -181,11 +185,15 @@ select {
     color: white;
     font-weight: 600;
     margin-top: 15px;
+    margin: 5px;
 }
 
-.center-text {
-    text-align: center;
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
