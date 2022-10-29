@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3222/3222808.png">
-    <script defer src="js/common.js"></script>
-    <script defer src="js/pages/add-city.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/add-city.js" defer></script>
 </head>
 
 <body>
@@ -30,16 +30,18 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Ciudad</h2>
-        <section>
+        
             <form>
+                <p>
                 <label for="ingresarCiudad">Ingrese la ciudad a agregar: </label>
                 <br>
-                <input type="text" id="ingresarCiudad" class="ag">
+                <input type="text" id="agregarCiudad" class="ag">
                 <br>
-                <input type="submit" value="Agregar" id="buttonAgCiudad" class="button">
+                <button onclick="addCity()" type="submit" class="button">Agregar</button> 
+            </p>
             </form>
-        </section>
-
+        
+        
         <section class="info-usuario">
             <div class="tarjetas" style="background-color: #28a745;">
                 <p>Ciudad agregada con éxito</p>
