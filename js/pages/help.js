@@ -1,13 +1,6 @@
-function validarEmail(){
-    if(!document.getElementById("Email")){
-
-    }else{
-        mostrarRojo();
-
+function validarEmail() {
+    var email = document.getElementById("emailUsuario").value;
+    if (email == "") {
+        document.getElementById("cartelError").style.display = "flex";
     }
-}
-
-
-function mostrarRojo(){
-    document.getElementById('errorHelp').style.display = "block"
 }

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/help.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3222/3222808.png">
-    <script defer src="js/common.js"></script>
-    <script defer src="js/pages/help.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/pages/help.js" defer></script>
 </head>
 
 <body>
@@ -49,17 +49,17 @@
                 <label for="areaTexto">Mensaje: </label>
                 <br>
                 <textarea id="areaTexto" rows="10" cols="30"></textarea>
-                <div class="center">
+                <div class="center" id="divBotones">
                     <br>
                     <input type="submit" value="Limpiar" class="button">
-                    <input type="submit" value="Enviar" id="enviarMensaje" class="button">
+                    <input type="button" value="Enviar" id="enviarMensaje" class="button" onclick="validarEmail()">
                 </div>
             </form>
         </section>
         <br>
 
         <section>
-            <div class="error">
+            <div class="error" id="cartelError">
                 <span>Ingrese un email válido</span>
             </div>
         </section>

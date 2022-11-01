@@ -1,4 +1,3 @@
-/*
 function ocultarAlerts() {
     document.getElementById('rojo').style.display = "none";
     document.getElementById('amarillo').style.display = "none";
@@ -13,25 +12,29 @@ function mostrarAlertAmarillo() {
 function mostrarAlertVerde() {
     document.getElementById('verde').style.display = "block";
 }
-*/
+
 function addCity(){
     let newCity = document.getElementById('agregarCiudad').value;
     let cities = getCitiesFromLocalStorage();
-    
-    /*
     if (cities.indexOf(newCity)>=0){
         document.getElementById('verde').style.display = "none";
         document.getElementById("amarillo").style.display = "block";
-    
-    } else {
-    */
+    } else if (newCity == "") {
+        document.getElementById('verde').style.display = "none";
+        document.getElementById('amarillo').style.display = "none";
+        document.getElementById('rojo').style.display = "block";
+    }
+    else {
         cities.push(newCity);
-    /*
+        document.getElementById('rojo').style.display = "none";
         document.getElementById('verde').style.display = "block";
         document.getElementById("amarillo").style.display = "none";
     }
-    */
     localStorage.setItem("CITIES",JSON.stringify(cities));
+
+   
+
+    // localStorage.clear();
 }
 
 function getCitiesFromLocalStorage(){

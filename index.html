@@ -38,21 +38,20 @@
                 <select name="city" id="Ciudades">
                     <option value="" disabled selected>Seleccionar Ciudad</option>
                 </select>
-                <input type="button" value="Consultar" class="button">
+                <input type="button" value="Consultar" class="button" onclick="mostrarCard()">
             </form>
         </section>
-
 
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
             <div class="card" id="card">
-                <h3>Rosario</h3>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png">
-                <p>Temperatura: 25.31°</p>
-                <p>Sensación Térmica: 24.65°</p>
-                <p>Humedad: 29%</p>
-                <p>Velocidad del viento: 4.63km/h</p>
-                <p>Presión: 1011 P</p>
+                <h3 id="tituloCard"></h3>
+                <p id="imagenTiempo"></p>
+                <p id="temperatura"></p>
+                <p id="sensTermica"></p>
+                <p id="humedad"></p>
+                <p id="velViento"></p>
+                <p id="presion"></p>
             </div>
         </section>
     </main>
