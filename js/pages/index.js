@@ -8,12 +8,13 @@ const conseguirDatos = async () => {
             const datos = await res.json();
             console.log(datos);
             var icon = datos.weather["0"].icon;
+            var c = datos["sys"].country;
             var t = datos["main"].temp;
             var s = datos["main"].feels_like;
             var h = datos["main"].humidity;
             var w = datos["wind"].speed;
             var p = datos["main"].pressure;
-            tituloCard = document.getElementById("tituloCard").innerHTML = `${ciudades}`;
+            tituloCard = document.getElementById("tituloCard").innerHTML = `${ciudades}` + " - "+c;
             imagenTiempo = document.getElementById("imagenTiempo").innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">` ;
             temp = document.getElementById("temperatura").innerHTML = "Temperatura: " + t + "°C";
             sensTermica = document.getElementById("sensTermica").innerHTML = "Sensación térmica: " + s + "°C";
